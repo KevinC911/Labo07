@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Labo05</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="starwars_tittle">Star Wars Episodio 2: La venganza de los Sith \n 9.8</string>
+    <string name="harrypotter_tittle">Harry Potter y la piedra filosofal \n 9.6</string>
+    <string name="starwars_tittlefrag">Star Wars Episodio 3: La venganza de los Sith</string>
+    <string name="starwars_description">La República se desmorona bajo los ataques del despiadado Lord Sith, el conde Dooku. Hay héroes en ambos bandos, pero el mal está por doquier. En una contundente jugada, el diabólico líder droide, el general Grievous, ha irrumpido en la capital de la República y ha secuestrado al Canciller Palpatine, líder del senado Galáctico. Mientras el ejército droide separatista trata de huir con su valioso rehén, dos caballeros Jedi inician una misión desesperada para liberar al Canciller cautivo.</string>
+    <string name="sfiction_genre">Ciencia Ficcion</string>
+    <string name="starwars_cal">9.8</string>
+    <string name="movie_add">Add Movie</string>
+    <string name="name_form">Name</string>
+    <string name="category_form">Category</string>
+    <string name="description_form">Description</string>
+    <string name="calification_form">Calification</string>
+    <string name="harrypotter_tittle_frag">Harry Potter Y la piedra filosofal</string>
+    <string name="harrypotter_cal_frag">9.6</string>
+    <string name="harrypotter_description">El día en que cumple once años, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. Deberá acudir entonces a una famosa escuela de magia y hechicería: Howards.</string>
+</resources>
