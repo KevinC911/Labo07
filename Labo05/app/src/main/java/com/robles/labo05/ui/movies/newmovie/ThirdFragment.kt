@@ -1,20 +1,15 @@
-package com.robles.labo05.ui.movies
+package com.robles.labo05.ui.movies.newmovie
 
-import android.graphics.Movie
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.robles.labo05.R
-import com.robles.labo05.data.model.MovieModel
 import com.robles.labo05.databinding.FragmentThirdBinding
+import com.robles.labo05.ui.movies.viewmodel.MovieViewModel
 
 class thirdFragment : Fragment() {
 

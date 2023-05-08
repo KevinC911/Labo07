@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundLayout"
-    tools:context=".ui.movies.FirstFragment">
+    tools:context=".ui.movies.billboard.FirstFragment">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/movie_list"
+        tools:itemCount="2"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_a_movie"
@@ -14,77 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:src="@drawable/add"
+        android:backgroundTint="@color/buttoncolor"
         android:contentDescription="submit"
+        android:src="@drawable/add"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/buttoncolor"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/star_wars"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginStart="@dimen/medium_24"
-        android:layout_marginTop="@dimen/big_32"
-        android:layout_marginEnd="@dimen/medium_24"
-        android:background="@color/cardLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="16dp"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"
-            android:src="@drawable/star_wars" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="24dp"
-            android:text="@string/starwars_tittle"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/harry_potter"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/cardLayout"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/star_wars"
-        app:layout_constraintVertical_bias="0.060000002"
-        tools:layout_editor_absoluteX="24dp">
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            android:paddingLeft="16dp"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"
-            android:src="@drawable/harry_potter" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="24dp"
-            android:text="@string/harrypotter_tittle"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
 </layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backgroundLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/star_wars"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/medium_24"
+        android:layout_marginTop="@dimen/big_32"
+        android:layout_marginEnd="@dimen/medium_24"
+        android:background="@color/cardLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/the_image"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:src="@drawable/star_wars"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="197dp"
+            android:layout_height="100dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="24dp"
+            android:text="@string/starwars_tittle"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/the_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/calification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/the_image"
+            app:layout_constraintTop_toBottomOf="@+id/title_text"
+            android:paddingLeft="@dimen/small_16"
+            android:paddingTop="8dp"
+            android:textColor="@color/calification"
+            android:textSize="18dp"
+            android:text="@string/calification_text"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+    </layout>

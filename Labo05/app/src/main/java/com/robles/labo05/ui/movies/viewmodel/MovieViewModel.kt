@@ -1,4 +1,4 @@
-package com.robles.labo05.ui.movies
+package com.robles.labo05.ui.movies.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -38,6 +38,13 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
         status.value = MOVIE_CREATED
     }
 
+    fun setSelectedMovie(movie: MovieModel) {
+        name.value = movie.name
+        category.value = movie.category
+        description.value = movie.description
+        qualification.value = movie.qualification
+    }
+
     private fun validateData(): Boolean {
         when {
             name.value.isNullOrEmpty() -> return false
@@ -49,7 +56,7 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
         return true
         }
 
-    private fun clearData() {
+    fun clearData() {
         name.value = ""
         category.value = ""
         description.value = ""

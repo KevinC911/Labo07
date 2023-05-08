@@ -1,10 +1,7 @@
 # Labo05Moviles
 ## Pregunta 1
-R/ No hay fugas de datos, los datos sobreviven al ciclo de vida de la UI y ademas los datos se mantienen actualizados
+R/ Que le ahorra trabajo a la aplicacion a la hora de crear multiples vistas en forma de lista dentro de la vista
 ## Pregunta 2
-R/ El patron de diseño observer
-## Pregunta 3
-R/ Entre los parentesis de android del module:app 
-dataBinding{enabled true}
-## Pregunta 4
-R/ Principalmente nos permite vincular directamente los elementos con los datos que se manejan en la aplicacion asi reduciendo la necesidad de hacer los cambios manualmente
+R/ List Item: Es la view que el recyclerview va a poner
+ViewHolder: Guarda la referencia de la view dentro de la lista
+Adapter: Vincula los datos a la vista que se muestra
